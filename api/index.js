@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var notes = require('./notes');
 
-/* GET home page. */
+router.use('/notes', notes);
+
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.send('Index here!');
 });
 
 module.exports = router;
