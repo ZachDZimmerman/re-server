@@ -1,0 +1,1 @@
+connection: 'postgres://localhost/DATABASE_NAME'
