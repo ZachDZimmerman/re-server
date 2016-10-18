@@ -1,1 +1,1 @@
-connection: 'postgres://localhost/DATABASE_NAME'
+LOCAL DATABASE_URL: 'postgres://localhost/DATABASE_NAME'
