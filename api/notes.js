@@ -5,7 +5,7 @@ var queries = require("../db/queries");
 router.get("/", function(req, res, next) {
     if (req.query.query) {
         queries.searchingNotes(req.query.query).then(function(data) {
-            res.json({data});
+            res.json({ data:data});
         });
     } else {
         next();

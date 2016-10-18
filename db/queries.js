@@ -12,7 +12,7 @@ module.exports = {
     getOneNote: function(id) {
         return knex('notes').where({id: id});
     },
-    searchingNotes: function(body) {
+    searchingNotes: function(query) {
       return knex('notes').select().where('body', 'like', '%'+query+'%');
     }
 };
