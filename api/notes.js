@@ -14,7 +14,7 @@ router.get("/", function(req, res, next) {
 
 router.get("/", function(req, res, next) {
     queries.getAllNotes().then(function(notes) {
-        res.json({notes});
+        res.json({ notes });
     }).catch(function(error) {
         next(error);
     });
